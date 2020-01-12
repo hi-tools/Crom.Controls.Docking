@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9DF5E3C-AAD6-4640-AAA1-65B3E7DA290B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Crom.Controls</RootNamespace>
+    <AssemblyName>Crom.Controls.Docking</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <DocumentationFile>bin\Debug\Crom.Controls.Docking.XML</DocumentationFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="EventArgs\AutoHideEventArgs.cs" />
+    <Compile Include="EventArgs\ContextMenuEventArg.cs" />
+    <Compile Include="EventArgs\ToolSelectionChangedEventArgs.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DockableToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Internals\DockButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Internals\CenterButtonToDockBottom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Internals\CenterButtonToDockBottom.Designer.cs">
+      <DependentUpon>CenterButtonToDockBottom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Internals\CenterButtonToDockUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Internals\CenterButtonToDockUp.Designer.cs">
+      <DependentUpon>CenterButtonToDockUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Internals\CenterButtonToDockRight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Internals\CenterButtonToDockRight.Designer.cs">
+      <DependentUpon>CenterButtonToDockRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Internals\CenterButtonToDockLeft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Internals\CenterButtonToDockLeft.Designer.cs">
+      <DependentUpon>CenterButtonToDockLeft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Internals\CenterButtonToDockFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Internals\CenterButtonToDockFill.Designer.cs">
+      <DependentUpon>CenterButtonToDockFill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Internals\CenterButtonsGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Internals\CenterButtonsGroup.Designer.cs">
+      <DependentUpon>CenterButtonsGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Internals\ButtonToDockRight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Internals\ButtonToDockRight.Designer.cs">
+      <DependentUpon>ButtonToDockRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Internals\ButtonToDockBottom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Internals\ButtonToDockBottom.Designer.cs">
+      <DependentUpon>ButtonToDockBottom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Internals\ButtonToDockLeft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Internals\ButtonToDockLeft.Designer.cs">
+      <DependentUpon>ButtonToDockLeft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Internals\ButtonToDockUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Internals\ButtonToDockUp.Designer.cs">
+      <DependentUpon>ButtonToDockUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Internals\DockPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Internals\DockPreview.Designer.cs">
+      <DependentUpon>DockPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ITitleData.cs" />
+    <Compile Include="NamespaceDoc.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DockContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DockContainer.Designer.cs">
+      <DependentUpon>DockContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\zDockMode.cs" />
+    <Compile Include="Engine\TabButton.cs" />
+    <Compile Include="Utilities\DrawUtility.cs" />
+    <Compile Include="Engine\DockPanel.cs" />
+    <Compile Include="Engine\DockPanelsLayout.cs" />
+    <Compile Include="Utilities\EnumUtility.cs" />
+    <Compile Include="Engine\DockPreviewEngine.cs">
+    </Compile>
+    <Compile Include="Engine\DockPanelsResizer.cs" />
+    <Compile Include="Engine\SideDockPanel.cs" />
+    <Compile Include="Utilities\TextUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Internals\CenterButtonToDockBottom.resx">
+      <DependentUpon>CenterButtonToDockBottom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Internals\CenterButtonToDockUp.resx">
+      <DependentUpon>CenterButtonToDockUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Internals\CenterButtonToDockRight.resx">
+      <DependentUpon>CenterButtonToDockRight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Internals\CenterButtonToDockLeft.resx">
+      <DependentUpon>CenterButtonToDockLeft.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Internals\CenterButtonToDockFill.resx">
+      <DependentUpon>CenterButtonToDockFill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Internals\CenterButtonsGroup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CenterButtonsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Internals\ButtonToDockRight.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ButtonToDockRight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Internals\ButtonToDockBottom.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ButtonToDockBottom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Internals\ButtonToDockLeft.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ButtonToDockLeft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Internals\ButtonToDockUp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ButtonToDockUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DockableToolWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DockableToolWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Internals\DockPreview.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DockPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DockContainer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DockContainer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Mono-2.0.1\lib\mono\2.0\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Mono-2.0.1\lib\mono\2.0\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Mono-2.0.1\lib\mono\2.0\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
